@@ -26,6 +26,7 @@ header {
 .split-view {
   display: flex;
   flex: 1;
+  overflow: auto;
 }
 
 .query-input {
@@ -45,9 +46,10 @@ header {
 .split-view > div {
   flex: 1;
   display: flex;
-  max-width: 50%;
-  min-width: 50%;
+  max-width: calc(50% - 6px);
+  min-width: calc(50% - 6px);
   flex-direction: column;
+  overflow: auto;
 }
 
 .split-view ngx-codemirror {
